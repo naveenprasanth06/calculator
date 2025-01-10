@@ -13,7 +13,6 @@
             padding: 20px;
             background-color: wheat;
         }
-
         input {
             margin-bottom: 40px;
             width: 300px;
@@ -23,17 +22,14 @@
             border: 1px  white;
             border-radius: 5px;
         }
-
         h1 {
             text-align: center;
             font-family: Arial, sans-serif;
         }
-
         table {
             border-spacing: 10px;
             margin: 0 auto;
         }
-
         button {
             width: 60px;
             height: 60px;
@@ -44,10 +40,6 @@
             color: black;
             cursor: pointer;
             transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: wheat;
         }
 
         body {
@@ -106,12 +98,10 @@
             showPopup(value + ' button clicked');
             document.getElementById('result').value += value;
         }
-
         function clearResult() {
             document.getElementById('result').value = '';
             showPopup('Clear button clicked');
         }
-
         function calculateResult() {
             try {
                 document.getElementById('result').value = eval(document.getElementById('result').value);
@@ -129,7 +119,6 @@
                 popup.style.display = 'none';
             }, 2000);
         }
-
         function changeBackgroundColor() {
             const colors = ['#FF6347', '#7CFC00', '#1E90FF', '#FFD700', '#8A2BE2', '#DC143C', '#FF4500'];
             const randomColor = colors[Math.floor(Math.random() * colors.length)];
